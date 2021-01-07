@@ -58,7 +58,11 @@ def generate_Initial_Parameters():
 y = genfromtxt("/home/suzon/Work/LED_tests/short_run/FYL-5014UWC1C-15/led1/0_filtered/filteredSpec_1556200954.csv")
 x = genfromtxt("/home/suzon/Work/LED_tests/short_run/FYL-5014UWC1C-15/led1/wls.csv")
 width = 200
+<<<<<<< HEAD
 index= peakutils.peak.indexes(y, thres= 01, min_dist=100)
+=======
+index= peakutils.peak.indexes(y, thres= 0.5, min_dist=100)
+>>>>>>> 675ec615410e69062b0ba2be16b2ca10d58ac332
 index = index[1:]
 print("X index:",x[index],"Y index:", y[index])
 peaks_y = peakutils.interpolate(x, y, ind=index, width= width)

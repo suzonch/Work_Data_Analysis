@@ -49,7 +49,11 @@ def get_raman_peak(x,y):
         return result.x
 
     width = 200
+<<<<<<< HEAD
     index = peakutils.peak.indexes(y, thres=01, min_dist=100)
+=======
+    index = peakutils.peak.indexes(y, thres=0.5, min_dist=100)
+>>>>>>> 675ec615410e69062b0ba2be16b2ca10d58ac332
     index = index[1:]
     print("X index:", x[index], "Y index:", y[index])
     peaks_y = peakutils.interpolate(x, y, ind=index, width=width)
@@ -74,7 +78,11 @@ def get_raman_peak(x,y):
     y_fit = double_Lorentz(xData, a, b, A, w, x_0, A1, w1, x_01)
 #    print("Max Y value:", max(yData))
 #    print("Max Y value after fitting:", max(y_fit))
+<<<<<<< HEAD
     index = peakutils.peak.indexes(y_fit, thres=01, min_dist=400)
+=======
+    index = peakutils.peak.indexes(y_fit, thres=0.5, min_dist=400)
+>>>>>>> 675ec615410e69062b0ba2be16b2ca10d58ac332
 #    index = index[1:]
 
     print("X index:", xData[index], "Y index:", y_fit[index])
@@ -95,7 +103,11 @@ def lorentzian_peak(x,y):
 
     def lorentzian_model(x, y):
         width = 200
+<<<<<<< HEAD
         index = peakutils.peak.indexes(y, thres=01, min_dist=100)
+=======
+        index = peakutils.peak.indexes(y, thres=0.5, min_dist=100)
+>>>>>>> 675ec615410e69062b0ba2be16b2ca10d58ac332
 #        index = index[1:]
         print("X index:", x[index], "Y index:", y[index])
         peaks_y = peakutils.interpolate(x, y, ind=index, width=width)
@@ -128,7 +140,11 @@ def lorentzian_peak(x,y):
 
         interpolation_window = 150  # recommanded to keep same as second_window
 
+<<<<<<< HEAD
         index = peakutils.peak.indexes(y, thres=01, min_dist=100)
+=======
+        index = peakutils.peak.indexes(y, thres=0.5, min_dist=100)
+>>>>>>> 675ec615410e69062b0ba2be16b2ca10d58ac332
         print("X index:", x[index], "Y index:", y[index])
         peaks_y = peakutils.interpolate(x, y, ind=index, width=interpolation_window)
         print("Interpolated:", peaks_y)
@@ -179,7 +195,11 @@ def lorentzian_peak(x,y):
 
 
 def org_peak(x,y):
+<<<<<<< HEAD
     index = peakutils.peak.indexes(y, thres=01, min_dist=100)
+=======
+    index = peakutils.peak.indexes(y, thres=0.5, min_dist=100)
+>>>>>>> 675ec615410e69062b0ba2be16b2ca10d58ac332
     print(y[index])
     return np.array([y[index[:1]], x[index[:1]], y[index[1:]], x[index[1:]]])
 

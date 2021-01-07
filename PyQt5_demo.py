@@ -15,9 +15,15 @@ class MainWindow(QMainWindow, form1.Ui_MainWindow):
     def __init__(self, parent=None):
         QMainWindow.__init__(self, parent)
         self.setupUi(self)
+<<<<<<< HEAD
         self.IntTimeEdt.setText("{:3.1f}".format(500.0))
         self.NumAvgEdt.setText("{0:d}".format(1))
         self.NumMeasEdt.setText("{0:d}".format(1))
+=======
+        self.IntTimeEdt.setText("{:3.1f}".format(10.0))
+        self.NumAvgEdt.setText("{0:d}".format(1))
+        self.NumMeasEdt.setText("{0:d}".format(5))
+>>>>>>> 675ec615410e69062b0ba2be16b2ca10d58ac332
         self.StartMeasBtn.setEnabled(True)
 #       self.OpenCommBtn.clicked.connect(self.on_OpenCommBtn_clicked)
 #       do not use explicit connect together with the on_ notation, or you will get
@@ -86,7 +92,11 @@ class MainWindow(QMainWindow, form1.Ui_MainWindow):
             if dataready == True:
                 scans = scans + 1
                 self.newdata.emit()
+<<<<<<< HEAD
             time.sleep(5)
+=======
+            time.sleep(10)
+>>>>>>> 675ec615410e69062b0ba2be16b2ca10d58ac332
         return
 
     @pyqtSlot()

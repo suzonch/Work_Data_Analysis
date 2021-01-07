@@ -20,7 +20,11 @@ from numpy import genfromtxt
 y = genfromtxt("/home/suzon/Work/LED_tests/long_run/long_LTW/45_LTW2_Filtered/spec_filtered_1559809409.csv")
 x = genfromtxt("/home/suzon/Work/LED_tests/long_run/long_LTW/wls.csv")
 width = 100
+<<<<<<< HEAD
 index= peakutils.peak.indexes(y, thres= 01, min_dist=400)
+=======
+index= peakutils.peak.indexes(y, thres= 0.5, min_dist=400)
+>>>>>>> 675ec615410e69062b0ba2be16b2ca10d58ac332
 print("X index:",x[index],"Y index:", y[index])
 peaks_y = peakutils.interpolate(x, y, ind=index, width= width)
 print("Interpolated:", peaks_y)

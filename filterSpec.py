@@ -12,7 +12,11 @@ x = genfromtxt("/home/suzon/Work/LED_tests/short_run/FYL-5014UWC1C-15/led1/wls.c
 
 width = 50
 
+<<<<<<< HEAD
 indexorg= peakutils.peak.indexes(y, thres= 01, min_dist=400)
+=======
+indexorg= peakutils.peak.indexes(y, thres= 0.5, min_dist=400)
+>>>>>>> 675ec615410e69062b0ba2be16b2ca10d58ac332
 #print(indexorg)
 #indexorg = indexorg[:]
 print("Original X index:", x[indexorg], "Original Y index:", y[indexorg])
@@ -30,7 +34,11 @@ ydata = np.array(y[range_left:range_right])
 #print("Max Y value after filtering:",max(ydata))
 
 
+<<<<<<< HEAD
 #filtered_index = peakutils.peak.indexes(ydata, thres= 01, min_dist=20)
+=======
+#filtered_index = peakutils.peak.indexes(ydata, thres= 0.5, min_dist=20)
+>>>>>>> 675ec615410e69062b0ba2be16b2ca10d58ac332
 #print('Filtered x index:', xdata[filtered_index], 'Filtered Y index:', ydata[filtered_index])
 #filtered_peaks_y = peakutils.interpolate(xdata, ydata, ind=filtered_index, width= width)
 #print("Interpolated Filtered:", filtered_peaks_y)

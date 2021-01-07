@@ -6,7 +6,11 @@ from scipy import signal
 
 
 s = genfromtxt("/home/suzon/Work/New_Files/Short_Run/loren_mte9440n_led1_0.csv", delimiter=',')
+<<<<<<< HEAD
 #temp = genfromtxt("/home/suzon/Work/LED_tests/short_run/MTE9440N/led1/temp_env.csv",delimiter=' ')
+=======
+temp = genfromtxt("/home/suzon/Work/LED_tests/short_run/MTE9440N/led1/temp_env.csv",delimiter=' ')
+>>>>>>> 675ec615410e69062b0ba2be16b2ca10d58ac332
 
 
 temperature = np.around([temp[:,1]], decimals=2)
@@ -80,7 +84,11 @@ def plot4(time, amplitude,wav1,amplitude2, wav2):
     par2.yaxis.label.set_color(p3.get_color())
     par3.yaxis.label.set_color(p4.get_color())
 
+<<<<<<< HEAD
     tkw = dict(size=4, width=11)
+=======
+    tkw = dict(size=4, width=1.5)
+>>>>>>> 675ec615410e69062b0ba2be16b2ca10d58ac332
     host.tick_params(axis='y', colors=p1.get_color(), **tkw)
     par1.tick_params(axis='y', colors=p2.get_color(), **tkw)
     par2.tick_params(axis='y', colors=p3.get_color(), **tkw)
@@ -133,7 +141,11 @@ def plot2(time, amplitude,wav1):
     par2.yaxis.label.set_color(p3.get_color())
 #    par3.yaxis.label.set_color(p4.get_color())
 
+<<<<<<< HEAD
     tkw = dict(size=4, width=11)
+=======
+    tkw = dict(size=4, width=1.5)
+>>>>>>> 675ec615410e69062b0ba2be16b2ca10d58ac332
     host.tick_params(axis='y', colors=p1.get_color(), **tkw)
 #    par1.tick_params(axis='y', colors=p2.get_color(), **tkw)
     par2.tick_params(axis='y', colors=p3.get_color(), **tkw)

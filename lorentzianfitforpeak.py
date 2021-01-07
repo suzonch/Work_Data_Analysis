@@ -8,7 +8,11 @@ from numpy import genfromtxt
 
 def lorentzian_model(x,y):
     width = 200
+<<<<<<< HEAD
     index = peakutils.peak.indexes(y, thres=01, min_dist=100)
+=======
+    index = peakutils.peak.indexes(y, thres=0.5, min_dist=100)
+>>>>>>> 675ec615410e69062b0ba2be16b2ca10d58ac332
     print("X index:", x[index], "Y index:", y[index])
     peaks_y = peakutils.interpolate(x, y, ind=index, width=width)
     print("Interpolated:", peaks_y)
@@ -38,7 +42,11 @@ def lorentzian_window(x,y):
 
     interpolation_window = 150  # recommanded to keep same as second_window
 
+<<<<<<< HEAD
     index = peakutils.peak.indexes(y, thres=01, min_dist=100)
+=======
+    index = peakutils.peak.indexes(y, thres=0.5, min_dist=100)
+>>>>>>> 675ec615410e69062b0ba2be16b2ca10d58ac332
     print("X index:", x[index], "Y index:", y[index])
     peaks_y = peakutils.interpolate(x, y, ind=index, width=interpolation_window)
     print("Interpolated:", peaks_y)
